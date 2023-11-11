@@ -46,4 +46,6 @@ USER chrome
 
 WORKDIR /home/chrome
 
+EXPOSE 8000
+
 CMD ["sh", "-c", "supervisord -c /etc/supervisor/supervisor.conf --logfile /dev/null --pidfile /dev/null"]
